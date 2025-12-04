@@ -1,10 +1,12 @@
 import type { NextConfig } from "next";
+import path from "path";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
+  cacheComponents: true,
   turbopack: {
-    root: __dirname,
+    // always absolute, always project root
+    root: path.resolve(__dirname),
   },
 };
 

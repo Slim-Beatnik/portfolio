@@ -1,0 +1,54 @@
+# defaults
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+.vscode/*
+.y*ml
+.prettierrc
+
+# only y(a)ml and json files in src
+!/src/**/*.y*ml
+!/src/**/*.json
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# env files (can opt-in for committing if needed)
+.env*
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# builders
+**/*package*.json
+*.mjs
+*.cjs
+*config.*s*
